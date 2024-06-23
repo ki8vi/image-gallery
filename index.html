@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/favicon/favicon.ico" type="image/x-icon">
+    <title>Image-gallery</title>
+</head>
+<body>
+        <main>
+            <div class="search-area">
+               <form>
+                    <input type="text" autocomplete="off" placeholder="search" autofocus>
+                    <img id="cancel-btn" src="./assets/icons/cancel.svg" alt="cancel-btn">
+               </form>
+               <img id="search-btn" src="./assets/icons/search.png" alt="search-icon">
+            </div>
+            <div class="right-side">
+                <div class="grid-area"></div>
+                <div class="gif-wrapper" style="display: none;"><span class="error">empty</span></div>
+            </div>
+            <footer>
+                <a href="https://github.com/ki8vi" target="_blank"><img src="./assets/icons/git-icon.png" alt="git-icon"></a>
+                <p>2023</p>
+                <a href="https://rs.school/js-stage0/" target="_blank"><img class="rs-logo" src="./assets/icons/rs_school_js.svg" alt="rs-icon"></a>
+                <div class="info-panel">
+                    <div class="remain-title">Requests:</div><div class="remain-display"></div>
+               </div>
+            </footer>
+        </main>
+        <div class="modal">
+            <div class="modal-body">
+                <img src="./assets/icons/prev-btn.png" alt="prev-btn" class="prev">
+                <img src="./assets/icons/next-btn.png" alt="next-btn" class="next">
+                <div class="stat-body">
+                   <div class="stat-wrapper">
+                        <img class="stat-close-btn" src="./assets/icons/cancel.svg" alt="stat-body-btn">
+                        <div class="stat-col"><div class="stat-title">Author:</div><div class="author stat-inner"></div></div>
+                        <div class="stat-col"><div class="stat-title">Bio:</div><div class="bio stat-inner"></div></div>
+                        <div class="stat-col"><div class="stat-title">Description:</div><div class="descrition stat-inner"></div></div>
+                        <div class="stat-col"><div class="stat-title">Likes:</div><div class="likes stat-inner"></div></div>
+                        <div class="stat-col"><div class="stat-title">Created at:</div><div class="date stat-inner"></div></div> 
+                        <div class="stat-col"><div class="stat-title">Full size:</div><a href="" class="stat-inner full-link" target="_blank">Link</a></div> 
+                   </div>                     
+                </div>
+                <img class="inner-modal" src="" alt="">
+                <img class="modal-close-btn" src="./assets/icons/cancel.svg" alt="close-btn">
+                <img class="stat-btn" src="./assets/icons/stat.png" alt="stats-btn">
+            </div>
+        </div>
+    <script src="./index.js"></script>
+</body>
+</html>
